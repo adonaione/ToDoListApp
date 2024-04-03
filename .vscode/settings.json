@@ -1,0 +1,10 @@
+{
+    "editor.fontSize": 18,
+    "editor.fontFamily": "'cascadia-cdoe'",
+    "workbench.productIconTheme": "a-file-icon-vscode-product-icon-theme",
+    "workbench.preferredDarkColorTheme": "Dark Green Jungle",
+    "workbench.preferredHighContrastColorTheme": "Best Themes - Synthwave Black(No Neon)",
+    "workbench.preferredHighContrastLightColorTheme": "Solarized Light",
+    "workbench.preferredLightColorTheme": "Solarized Light",
+    "workbench.iconTheme": "material-icon-theme"
+}
