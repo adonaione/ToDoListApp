@@ -18,7 +18,7 @@ class Task:
         
 
     def __str__(self):
-        return f'The name of this task is {self.task_id}.\nTask description is: {self.description}.\nCompletion status is: {self.completion_status}'
+        return f' \nThe name of this task is {self.task_id}.\n\nTask description is: {self.description}.\n\nCompletion status is: {self.completion_status}\n '
     
     #write a function that takes in a task_id and checks if it matches self.task_id
     def is_same_task(self, task):

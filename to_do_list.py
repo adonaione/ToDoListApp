@@ -13,7 +13,7 @@ class ToDoList:
         # Loop through all of the tasks in the app
         for task in self.tasks:
             # If the task's ID matches the task_id argument
-            if models.Task.is_same_task == task_id:
+            if task_id == task_id:
                 # return the task instance
                 return task
         # If we finish the loop, that means the task with that ID does not exist
@@ -47,10 +47,9 @@ class ToDoList:
     #method for editing task completion status
     def edit_task(self, task_id):
         task = self._get_task_from_id(task_id)
-        if task:
-            if task.task_id == task_id:
-                new_status = input("Enter new completion status for this task. Complete/Incomplete ")
-                task.completion_status = new_status
+        if task is not None:
+            new_status = input("Enter new completion status for this task. Complete/Incomplete ")
+            task.completion_status = new_status
             print(f'{task_id} has successfully been updated.')
         else:
             print('That is not on the to-do list.')
@@ -74,7 +73,7 @@ class ToDoList:
     def retrieve_task(self, task_id):
         task = self._get_task_from_id(task_id)
         if task:
-            return models.Task()
+            print(task)
         else:
             return "Does not exist."
 
